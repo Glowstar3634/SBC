@@ -144,17 +144,27 @@
   function initIntro() {
     const body = document.body;
     const firstTitle = $('#home')?.dataset.railTitle || data.railHeaders.home;
-    $('#railHeadline').textContent = firstTitle;
+    const headline = $('#railHeadline');
+    if (headline) {
+      headline.textContent = firstTitle;
+      headline.classList.add('headline-in');
+    }
 
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       body.classList.remove('intro-start');
-      body.classList.add('rail-docked', 'brand-stacked');
+      body.classList.add('rail-docked', 'brand-stacked', 'content-ready', 'headline-ready');
       return;
     }
 
     window.setTimeout(() => body.classList.add('brand-visible'), 220);
     window.setTimeout(() => body.classList.add('rail-transitioning', 'brand-stacked'), 1250);
     window.setTimeout(() => body.classList.add('rail-docked'), 2350);
+
+    // The sidebar finishes docking at ~2.35s. Main content begins its fade exactly 0.6s later.
+    window.setTimeout(() => body.classList.add('content-ready'), 2950);
+
+    // Keep sidebar section headers hidden until the main screen has fully faded in.
+    window.setTimeout(() => body.classList.add('headline-ready'), 3700);
   }
 
   function initDynamicRailHeader() {
@@ -163,25 +173,43 @@
     const sections = $$('.panel');
     if (!headline || !sections.length) return;
 
+    let activeId = '';
+    let headlineTimer = null;
+
     const setActive = (id, title) => {
+      if (!id || id === activeId) return;
+      activeId = id;
+      window.clearTimeout(headlineTimer);
       headline.classList.remove('headline-in');
-      window.setTimeout(() => {
-        headline.textContent = title;
+      headlineTimer = window.setTimeout(() => {
+        headline.textContent = title || data.railHeaders[id] || '';
         headline.classList.add('headline-in');
       }, 120);
       links.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === `#${id}`));
     };
 
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (!visible) return;
-      const section = visible.target;
-      setActive(section.id, section.dataset.railTitle || '');
-    }, { threshold: [0.34, 0.55, 0.72], rootMargin: '-10% 0px -25% 0px' });
+    const updateActiveFromScroll = () => {
+      const targetY = window.innerHeight * 0.5;
+      let best = sections[0];
+      let bestDistance = Infinity;
 
-    sections.forEach((section) => observer.observe(section));
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        const sectionCenter = rect.top + rect.height / 2;
+        const containsTarget = rect.top <= targetY && rect.bottom >= targetY;
+        const distance = containsTarget ? 0 : Math.abs(sectionCenter - targetY);
+        if (distance < bestDistance) {
+          best = section;
+          bestDistance = distance;
+        }
+      });
+
+      setActive(best.id, best.dataset.railTitle || data.railHeaders[best.id] || '');
+    };
+
+    updateActiveFromScroll();
+    window.addEventListener('scroll', updateActiveFromScroll, { passive: true });
+    window.addEventListener('resize', updateActiveFromScroll);
   }
 
   function initReveals() {

@@ -12,7 +12,7 @@ window.siteData = {
       "alt": "Sandra Brown portrait."
     },
     "studio": {
-      "src": "assets/images/sbc_std.jpg",
+      "src": "assets/images/sbc_std_zoom.jpg",
       "alt": "Sandra Brown in a creative studio environment."
     },
     "sandra": {
@@ -20,7 +20,7 @@ window.siteData = {
       "alt": "Sandra Brown professional portrait."
     },
     "jacquie": {
-      "src": "assets/images/sbc_jqf.png",
+      "src": "assets/images/sbc_jaq.jpg",
       "alt": "Jacquie Fernandez professional portrait."
     },
     "lecrae": {
@@ -97,7 +97,7 @@ window.siteData = {
       "role": "Associate Attorney",
       "linkedin": "https://www.linkedin.com/in/jacquie-fernandez-954962356/",
       "body": [
-        "Jacquie Fernandez supports Sandra Brown Consulting as an associate attorney with a background that combines entertainment-law practice, artist-management experience, and music-industry perspective.",
+        "Jacquie Fernandez is an attorney with the law offices of Sandra Brown Consulting, LLC, where she provides legal representation to recording artists, music producers, and entertainment companies. Jacquie’s work focuses on drafting and negotiating relevant agreements, including producer agreements, songwriter agreements and featured artist agreements.",
         "Public professional information lists her as an Associate Attorney at Sandra Brown Consulting, LLC, with prior experience as Of Counsel at Greenspoon Marder LLP and Co-Owner of Concrete Artist Management, LLC. Her education is listed as a J.D. from Fordham University School of Law and a B.A. from the University of Pennsylvania."
       ],
       "credentials": [
