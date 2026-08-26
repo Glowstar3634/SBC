@@ -4,7 +4,9 @@ window.siteData = {
     "shortName": "Sandra Brown Consulting",
     "discipline": "Entertainment Law",
     "tagline": "Navigating contracts and protecting creative rights.",
-    "note": "Attorney advertising. Representative client and recognition information should be reviewed by counsel before launch."
+    "note": "Attorney advertising. Representative client and recognition information should be reviewed by counsel before launch.",
+    "address": "1100 Peachtree Street NE, Suite 200, Atlanta, GA 30309",
+    "phone": "404-301-9723"
   },
   "images": {
     "hero": {
@@ -33,32 +35,20 @@ window.siteData = {
     }
   },
   "navigation": [
-    {
-      "label": "Home",
-      "href": "#home"
-    },
-    {
-      "label": "Profile",
-      "href": "#profile"
-    },
-    {
-      "label": "Practice",
-      "href": "#practice"
-    },
-    {
-      "label": "Recognition",
-      "href": "#recognition"
-    }
+    { "label": "Home", "href": "#home" },
+    { "label": "Profile", "href": "#profile" },
+    { "label": "Clients", "href": "#practice" },
+    { "label": "Recognition", "href": "#recognition" }
   ],
   "railHeaders": {
-    "home": "Strategic counsel for music, media, and creative enterprise.",
-    "profile": "Lawyers trusted at the intersection of talent, rights, and business.",
-    "practice": "Clear agreements for creative businesses.",
-    "recognition": "Recognition earned across law, leadership, and music culture."
+    "home": "Strategic counsel in the entertainment industry.",
+    "profile": "Trusted at the intersection of talent, rights, and business.",
+    "practice": "Representative clients include:",
+    "recognition": "Selected writing and recognition."
   },
   "hero": {
-    "eyebrow": "Entertainment law for the business behind the work",
-    "intro": "Sandra Brown Consulting helps artists, executives, managers, producers, filmmakers, athletes, and entertainment companies move through complex contracts, rights, negotiations, and deal-making with clarity.",
+    "eyebrow": "Entertainment counsel for talent, rights, and creative enterprise",
+    "intro": "Sandra Brown focuses on counseling award-winning recording artists, music producers, songwriters, independent filmmakers, music managers, music executives, and entertainment companies.",
     "highlights": [
       {
         "value": "25+",
@@ -69,147 +59,112 @@ window.siteData = {
         "label": "Bar admissions"
       },
       {
-        "value": "Music / Film / Talent",
-        "label": "Rights, deals, production, publishing, and brand work"
+        "value": "Dealmaking",
+        "label": "Recording, production, publishing, and marketing/brand work"
       }
     ]
   },
   "profile": {
     "sandra": {
-      "name": "Sandra Brown Dublas",
+      "name": "Sandra Brown, Esq.",
       "role": "Founder / Entertainment Counsel",
       "linkedin": "https://www.linkedin.com/in/sandra-brown-dublas/",
       "body": [
-        "Sandra Brown Dublas focuses on strategic business counseling for clients and their business and management teams. She works with award-winning recording artists, music producers, songwriters across Hip Hop, Pop, Rock, and Christian music, independent filmmakers, music managers, music executives, professional athletes, and entertainment companies.",
-        "Her practice centers on structuring and negotiating agreements across recorded music, music publishing, live performance, television talent agreements, independent film production, merchandising, sponsorships, endorsements, licensing, releases, confidentiality, amendments, assignments, and related intellectual-property protection.",
-        "Before Sandra Brown Consulting, her career included Of Counsel at Greenspoon Marder, Partner at Taylor English Duma, ownership of The Law Offices of Sandra L. Brown, P.C., Of Counsel roles at Medley & Kosakoski and Greenberg Traurig, and in-house business and legal affairs work for the entertainment companies owned by Jermaine Dupri."
+        "Sandra Brown structures and negotiates agreements in the areas of music, music publishing, live performances, branding/endorsements, independent film, licensing and other related intellectual-property protection.",
+        "Before establishing Sandra Brown Consulting, her career included over a decade of experience at both AMLAW 100 and AMLAW 200 law firms."
       ],
       "credentials": [
-        "J.D., Florida State University College of Law",
-        "B.S., Legal Studies, Nova Southeastern University",
+        "Entertainment, media, and technology counsel",
         "Admitted in Georgia and New York",
-        "Former Vice Chair, State Bar of Georgia Entertainment & Sports Law Section",
-        "Member, The Recording Academy"
+        "Over a decade of AMLAW 100 and AMLAW 200 law firm experience",
+        "J.D., Florida State University College of Law",
+        "B.S., Legal Studies, Nova Southeastern University"
       ]
     },
     "jacquie": {
-      "name": "Jacquie Fernandez",
-      "role": "Associate Attorney",
+      "name": "Jacquie Fernandez, Esq.",
+      "role": "Attorney",
       "linkedin": "https://www.linkedin.com/in/jacquie-fernandez-954962356/",
       "body": [
-        "Jacquie Fernandez is an attorney with the law offices of Sandra Brown Consulting, LLC, where she provides legal representation to recording artists, music producers, and entertainment companies. Jacquie’s work focuses on drafting and negotiating relevant agreements, including producer agreements, songwriter agreements and featured artist agreements.",
-        "Public professional information lists her as an Associate Attorney at Sandra Brown Consulting, LLC, with prior experience as Of Counsel at Greenspoon Marder LLP and Co-Owner of Concrete Artist Management, LLC. Her education is listed as a J.D. from Fordham University School of Law and a B.A. from the University of Pennsylvania."
+        "Jacquie Fernandez provides legal representation to recording artists, music producers, and entertainment companies. Jacquie’s work focuses on drafting and negotiating relevant agreements, including producer agreements, songwriter agreements and featured artist agreements.",
+        "She is Co-Owner of Concrete Artist Management, LLC."
       ],
       "credentials": [
-        "Entertainment-law and legal-advice focus",
-        "Former Of Counsel, Greenspoon Marder LLP",
-        "Co-Owner, Concrete Artist Management, LLC",
-        "J.D., Fordham University School of Law",
-        "B.A., University of Pennsylvania"
+        "Recording artist, music producer, and entertainment company representation",
+        "Producer, songwriter, and featured artist agreements",
+        "Co-Owner, Concrete Artist Management, LLC"
       ]
-    },
-    "timeline": [
-      {
-        "period": "1995\u20132000",
-        "title": "So So Def / Artistic Control",
-        "copy": "Associate Director of Business & Legal Affairs for entities owned by Jermaine Dupri, drafting and negotiating recording, producer, distribution, management, and publishing agreements."
-      },
-      {
-        "period": "2000\u20132004",
-        "title": "Greenberg Traurig",
-        "copy": "Of Counsel in the Entertainment Group, providing business and legal services to high-profile artists, producers, managers, and entertainment corporations."
-      },
-      {
-        "period": "2007\u20132016",
-        "title": "The Law Offices of Sandra L. Brown",
-        "copy": "Founder and owner of a focused Atlanta entertainment-law practice serving sports, entertainment, talent, affiliated companies, ventures, and nonprofit organizations."
-      },
-      {
-        "period": "2017\u20132021",
-        "title": "Taylor English Duma",
-        "copy": "Partner and Executive Committee member, advising on recorded music, publishing, live performance, television, film, merchandising, and brand licensing."
-      },
-      {
-        "period": "2021\u2013Present",
-        "title": "Greenspoon Marder / Sandra Brown Consulting",
-        "copy": "Entertainment counsel for recording artists, songwriters, filmmakers, producers, athletes, estates, and creative companies."
-      }
-    ]
+    }
   },
   "practice": {
-    "intro": "A concise look at the deal work, rights strategy, and client ecosystems behind the practice.",
+    "intro": "Types of deals include recording, production, publishing, and marketing/brand work.",
     "areas": [
       {
-        "title": "Recorded Music",
-        "copy": "Recording, producer, distribution, and label-side agreements for artists, producers, executives, and entertainment companies."
+        "title": "Recording + Production",
+        "copy": "Recording, producer, featured artist, label, and production-related agreements."
       },
       {
-        "title": "Music Publishing",
-        "copy": "Songwriter, publishing, administration, catalog, licensing, assignment, and royalty-adjacent business matters."
+        "title": "Publishing",
+        "copy": "Songwriter, publishing, catalog, administration, licensing, and related rights matters."
       },
       {
-        "title": "Live Performance + Talent",
-        "copy": "Live performance, touring, television talent, independent film, and creative business arrangements."
+        "title": "Marketing + Brand Work",
+        "copy": "Branding, endorsements, sponsorships, merchandising, and name-and-likeness work."
       },
       {
-        "title": "Branding + Endorsements",
-        "copy": "Merchandising, sponsorships, endorsement campaigns, name-and-likeness usage, and brand licensing."
-      },
-      {
-        "title": "Commercial Contracts",
-        "copy": "Licenses, NDAs, waivers, releases, independent contractor agreements, settlements, amendments, assignments, and dispute-support strategy."
+        "title": "Film + Live Performance",
+        "copy": "Independent film, live performance, and talent-related agreements."
       }
     ],
-    "clientsNote": "Representative clients are included with permission and for context only.",
+    "clientsNote": "Representative clients are included with permission.",
     "featuredClient": {
       "name": "Lecrae Moore",
       "type": "Recording Artist",
-      "copy": "Sandra\u2019s representative-client materials list Lecrae Moore among clients from 2017 to present. Recent public discography shows Lecrae\u2019s 2025 album Reconstruction and 2026 deluxe continuation Reconstruction: Second Story."
+      "copy": "Lecrae Moore is a recording artist represented among the firm’s approved representative client materials.",
+      "links": [
+        { "label": "Lecrae | Reach Records", "url": "https://www.reachrecords.com/artists/lecrae/" },
+        { "label": "Instagram", "url": "https://www.instagram.com/lecrae/" }
+      ]
     },
     "clients": [
       {
-        "name": "Nick Cannon",
-        "type": "Artist / Producer / Media Executive",
-        "copy": "A multi-platform entertainer whose current public profile includes The Masked Singer, Wild \u2019N Out, nationally syndicated radio, and producer/host work."
-      },
-      {
-        "name": "Think It\u2019s A Game Records",
+        "name": "Think It’s A Game Records, Inc.",
         "type": "Record Label",
-        "copy": "The Atlanta label is listed in Sandra\u2019s representative-client materials; public reporting describes its 2025 return to independence and YFN Lucci release activity."
+        "copy": "The Atlanta-based independent label responsible for YFN Lucci releases.",
+        "links": [
+          { "label": "Instagram", "url": "https://www.instagram.com/thinkitsagame/" }
+        ]
       },
       {
-        "name": "Jasmine Morrow / GoGo Morrow",
-        "type": "Recording Artist",
-        "copy": "Representative materials list Jasmine Morrow / GoGo Morrow; recent music listings include 2025 single activity and R&B releases."
+        "name": "Barking Owl",
+        "type": "Music + Sound for Brands",
+        "copy": "A music and sound company serving brand, advertising, and creative campaigns.",
+        "links": [
+          { "label": "Website", "url": "https://www.barkingowl.com/" }
+        ]
       },
       {
-        "name": "Booker T. Mattison",
-        "type": "Writer / Director / Professor",
-        "copy": "Listed as a representative client; his film work includes The Sound of Christmas, starring Ne-Yo and Serayah."
-      },
-      {
-        "name": "Tessanne Chin",
-        "type": "Recording Artist",
-        "copy": "Listed as a representative client and publicly known as a recording artist and winner of Season 5 of The Voice."
+        "name": "The Wilson Pickett Jr. Estate",
+        "type": "Legacy / Estate",
+        "copy": "The legacy estate connected to the official Wilson Pickett brand and music legacy.",
+        "links": [
+          { "label": "Official Legacy Site", "url": "https://www.wilsonpickettlegacy.com/" }
+        ]
       }
     ]
   },
   "recognition": {
     "items": [
-      "Billboard Top Music Lawyer",
+      "4x Billboard Top Music Lawyer",
+      "2025 Leading Global Entertainment, Sports & Media Lawyer",
+      "ASCAP Women in Music Honoree",
+      "Former Vice Chair, State Bar of Georgia Entertainment & Sports Law Section",
       "Nova Southeastern University Distinguished Alumni Award Recipient",
-      "ASCAP Women in Music Honoree, featured in Billboard Magazine",
-      "The Atlanta Post, \u201813 Women Fueling the Music Industry\u2019",
-      "Florida State University \u2018Celebrates Women Entrepreneurs\u2019 feature",
-      "Vice Chair, State Bar of Georgia Entertainment & Sports Law Section",
-      "National Academy of Recording Arts & Sciences / Recording Academy Member",
-      "BESLA Member and conference speaker",
-      "Contributor, 50 Lessons for Women Lawyers, From Women Lawyers"
+      "Florida State University ‘Celebrates Women Entrepreneurs’ feature"
     ],
     "publications": [
       "Digital Transmission of Sound Recordings, New York Law Journal",
-      "Sound Recording Advances Call for Change in Law, New York Law Journal",
-      "Chapter/Lesson 8: Find A Mentor \u2013 Be A Mentor, in 50 Lessons for Women Lawyers, From Women Lawyers"
+      "Sound Recording Advances Call for Change in Law, New York Law Journal"
     ],
     "disclaimer": "Selected recognitions, clients, and background items are included for context. They are not a promise of any particular result."
   }

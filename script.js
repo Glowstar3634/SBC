@@ -66,14 +66,14 @@
         ${profileBlock(data.profile.sandra, data.images.studio)}
         ${profileBlock(data.profile.jacquie, data.images.jacquie)}
       </div>
-      <div class="timeline-strip reveal">
-        ${data.profile.timeline.map((item) => `
-          <article class="timeline-item">
-            <span>${escapeHtml(item.period)}</span>
-            <h3>${escapeHtml(item.title)}</h3>
-            <p>${escapeHtml(item.copy)}</p>
-          </article>
-        `).join('')}
+    `;
+  }
+
+  function clientLinks(links = []) {
+    if (!links.length) return '';
+    return `
+      <div class="client-links">
+        ${links.map((link) => `<a href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)} ↗</a>`).join('')}
       </div>
     `;
   }
@@ -96,10 +96,11 @@
         <article class="featured-client">
           <div class="client-photo">${imageMarkup(data.images.lecrae, 'client-img')}</div>
           <div class="client-copy">
-            <p class="section-kicker">Featured representative client</p>
+            <p class="section-kicker">Representative clients include</p>
             <h3>${escapeHtml(data.practice.featuredClient.name)}</h3>
             <span>${escapeHtml(data.practice.featuredClient.type)}</span>
             <p>${escapeHtml(data.practice.featuredClient.copy)}</p>
+            ${clientLinks(data.practice.featuredClient.links)}
           </div>
         </article>
         <div class="client-list" aria-label="Representative clients">
@@ -108,6 +109,7 @@
               <span>${escapeHtml(client.type)}</span>
               <h3>${escapeHtml(client.name)}</h3>
               <p>${escapeHtml(client.copy)}</p>
+              ${clientLinks(client.links)}
             </article>
           `).join('')}
         </div>
@@ -123,7 +125,7 @@
           ${data.recognition.items.map((item) => `<span>${escapeHtml(item)}</span>`).join('')}
         </div>
         <div class="publication-card reveal" data-delay="1">
-          <p class="section-kicker">Selected writing + service</p>
+          <p class="section-kicker">Selected writing</p>
           ${data.recognition.publications.map((item) => `<p>${escapeHtml(item)}</p>`).join('')}
           <small>${escapeHtml(data.recognition.disclaimer)}</small>
         </div>
@@ -137,6 +139,10 @@
         <strong>${escapeHtml(data.meta.name)}</strong>
         <span>${escapeHtml(data.meta.discipline)}</span>
       </div>
+      <address>
+        ${escapeHtml(data.meta.address)}<br />
+        P: ${escapeHtml(data.meta.phone)}
+      </address>
       <p>${escapeHtml(data.meta.note)}</p>
     `;
   }
