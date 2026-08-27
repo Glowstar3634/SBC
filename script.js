@@ -78,7 +78,26 @@
     `;
   }
 
+  function featuredClientMarkup(client, image, modifier = '') {
+    return `
+      <article class="featured-client ${modifier}">
+        <div class="client-photo">${imageMarkup(image, 'client-img')}</div>
+        <div class="client-copy">
+          <p class="section-kicker">Featured representative client</p>
+          <h3>${escapeHtml(client.name)}</h3>
+          <span>${escapeHtml(client.type)}</span>
+          <p>${escapeHtml(client.copy)}</p>
+          ${clientLinks(client.links)}
+        </div>
+      </article>
+    `;
+  }
+
   function renderPractice() {
+    const secondaryFeatured = data.practice.secondaryFeaturedClient
+      ? featuredClientMarkup(data.practice.secondaryFeaturedClient, data.images.heroBand, 'featured-client--secondary')
+      : '';
+
     $('#practice').innerHTML = `
       <div class="practice-intro reveal">
         <p>${escapeHtml(data.practice.intro)}</p>
@@ -93,16 +112,7 @@
         `).join('')}
       </div>
       <div class="client-showcase reveal" data-delay="1">
-        <article class="featured-client">
-          <div class="client-photo">${imageMarkup(data.images.lecrae, 'client-img')}</div>
-          <div class="client-copy">
-            <p class="section-kicker">Representative clients include</p>
-            <h3>${escapeHtml(data.practice.featuredClient.name)}</h3>
-            <span>${escapeHtml(data.practice.featuredClient.type)}</span>
-            <p>${escapeHtml(data.practice.featuredClient.copy)}</p>
-            ${clientLinks(data.practice.featuredClient.links)}
-          </div>
-        </article>
+        ${featuredClientMarkup(data.practice.featuredClient, data.images.lecrae)}
         <div class="client-list" aria-label="Representative clients">
           ${data.practice.clients.map((client) => `
             <article class="client-chip">
@@ -113,6 +123,7 @@
             </article>
           `).join('')}
         </div>
+        ${secondaryFeatured}
         <p class="client-note">${escapeHtml(data.practice.clientsNote)}</p>
       </div>
     `;
@@ -120,16 +131,12 @@
 
   function renderRecognition() {
     $('#recognition').innerHTML = `
-      <div class="recognition-layout">
+      <div class="recognition-layout recognition-layout--simple">
         <div class="recognition-list reveal">
           ${data.recognition.items.map((item) => `<span>${escapeHtml(item)}</span>`).join('')}
         </div>
-        <div class="publication-card reveal" data-delay="1">
-          <p class="section-kicker">Selected writing</p>
-          ${data.recognition.publications.map((item) => `<p>${escapeHtml(item)}</p>`).join('')}
-          <small>${escapeHtml(data.recognition.disclaimer)}</small>
-        </div>
       </div>
+      <p class="recognition-note reveal" data-delay="1">${escapeHtml(data.recognition.disclaimer)}</p>
     `;
   }
 
@@ -165,11 +172,7 @@
     window.setTimeout(() => body.classList.add('brand-visible'), 220);
     window.setTimeout(() => body.classList.add('rail-transitioning', 'brand-stacked'), 1250);
     window.setTimeout(() => body.classList.add('rail-docked'), 2350);
-
-    // The sidebar finishes docking at ~2.35s. Main content begins its fade exactly 0.6s later.
     window.setTimeout(() => body.classList.add('content-ready'), 2950);
-
-    // Keep sidebar section headers hidden until the main screen has fully faded in.
     window.setTimeout(() => body.classList.add('headline-ready'), 3700);
   }
 

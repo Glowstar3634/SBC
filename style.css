@@ -179,7 +179,7 @@ img { max-width: 100%; }
   position: relative;
   z-index: 1;
   height: min(76vh, 760px);
-  min-height: 460px;
+  min-height: 540px;
   overflow: hidden;
   border-radius: 40px;
   box-shadow: var(--shadow);
@@ -234,7 +234,7 @@ img { max-width: 100%; }
 .profile-stack { display: grid; gap: 46px; }
 .person-card {
   display: grid;
-  grid-template-columns: minmax(270px, .62fr) minmax(380px, 1fr);
+  grid-template-columns: minmax(320px, .78fr) minmax(420px, 1fr);
   gap: clamp(26px, 4vw, 60px);
   align-items: center;
 }
@@ -242,7 +242,7 @@ img { max-width: 100%; }
 .person-image-wrap {
   overflow: hidden;
   border-radius: 34px;
-  min-height: 460px;
+  min-height: 540px;
   background: var(--cream);
   box-shadow: var(--shadow);
 }
@@ -373,7 +373,7 @@ img { max-width: 100%; }
 }
 .client-copy span { color: var(--clay); font-weight: 900; letter-spacing: .14em; text-transform: uppercase; font-size: .72rem; }
 .client-copy p:last-child { margin-top: 20px; color: rgba(255,255,255,.74); max-width: 620px; }
-.client-list { display: grid; grid-template-columns: repeat(5, minmax(170px, 1fr)); gap: 12px; }
+.client-list { display: grid; grid-template-columns: repeat(3, minmax(220px, 1fr)); gap: 12px; }
 .client-chip { padding: 20px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.035); border-radius: 24px; }
 .client-chip span { color: var(--clay); font-size: .65rem; font-weight: 900; text-transform: uppercase; letter-spacing: .15em; }
 .client-chip h3 { margin: 10px 0; color: #fff; font-size: 1.05rem; }
@@ -579,4 +579,60 @@ img { max-width: 100%; }
 
 @media (max-width: 760px) {
   .practice-areas, .client-list { grid-template-columns: 1fr; }
+}
+
+
+/* v2.4 revisions */
+.person-card {
+  align-items: stretch;
+}
+
+.person-image-wrap {
+  aspect-ratio: 4 / 5;
+}
+
+.person-image {
+  object-position: center center;
+}
+
+.person-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.person-copy h3,
+.person-copy p:not(.person-role) {
+  max-width: 46rem;
+}
+
+.client-showcase {
+  gap: 26px;
+}
+
+.featured-client--secondary {
+  margin-top: 6px;
+}
+
+.recognition-layout--simple {
+  grid-template-columns: 1fr;
+}
+
+.recognition-note {
+  margin: 26px 0 0;
+  max-width: 860px;
+  color: #5c524b;
+  font-size: .84rem;
+}
+
+@media (max-width: 1180px) {
+  .person-card,
+  .featured-client {
+    grid-template-columns: 1fr;
+  }
+
+  .person-card:nth-child(even) .person-image-wrap {
+    order: 0;
+  }
 }

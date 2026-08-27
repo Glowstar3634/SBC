@@ -32,27 +32,43 @@ window.siteData = {
     "secondary": {
       "src": "assets/images/sbc_hs2.jpg",
       "alt": "Sandra Brown portrait in a black leather jacket."
+    },
+    "heroBand": {
+      "src": "assets/images/sbc_hero.jpg",
+      "alt": "Hero The Band with Sandra Brown at an outdoor event."
     }
   },
   "navigation": [
-    { "label": "Home", "href": "#home" },
-    { "label": "Profile", "href": "#profile" },
-    { "label": "Clients", "href": "#practice" },
-    { "label": "Recognition", "href": "#recognition" }
+    {
+      "label": "Home",
+      "href": "#home"
+    },
+    {
+      "label": "Profile",
+      "href": "#profile"
+    },
+    {
+      "label": "Clients",
+      "href": "#practice"
+    },
+    {
+      "label": "Recognition",
+      "href": "#recognition"
+    }
   ],
   "railHeaders": {
     "home": "Strategic counsel in the entertainment industry.",
     "profile": "Trusted at the intersection of talent, rights, and business.",
-    "practice": "Representative clients include:",
-    "recognition": "Selected writing and recognition."
+    "practice": "Featured representative clients.",
+    "recognition": "Selected recognition."
   },
   "hero": {
     "eyebrow": "Entertainment counsel for talent, rights, and creative enterprise",
     "intro": "Sandra Brown focuses on counseling award-winning recording artists, music producers, songwriters, independent filmmakers, music managers, music executives, and entertainment companies.",
     "highlights": [
       {
-        "value": "25+",
-        "label": "Years in entertainment law and business affairs"
+        "value": "Types of Deals",
+        "label": "Recording, production, publishing, and marketing/brand work"
       },
       {
         "value": "GA + NY",
@@ -60,13 +76,13 @@ window.siteData = {
       },
       {
         "value": "Dealmaking",
-        "label": "Recording, production, publishing, and marketing/brand work"
+        "label": "Strategic counsel across rights, negotiations, and creative business"
       }
     ]
   },
   "profile": {
     "sandra": {
-      "name": "Sandra Brown, Esq.",
+      "name": "Sandra Brown",
       "role": "Founder / Entertainment Counsel",
       "linkedin": "https://www.linkedin.com/in/sandra-brown-dublas/",
       "body": [
@@ -86,7 +102,7 @@ window.siteData = {
       "role": "Attorney",
       "linkedin": "https://www.linkedin.com/in/jacquie-fernandez-954962356/",
       "body": [
-        "Jacquie Fernandez provides legal representation to recording artists, music producers, and entertainment companies. Jacquie’s work focuses on drafting and negotiating relevant agreements, including producer agreements, songwriter agreements and featured artist agreements.",
+        "Jacquie Fernandez provides legal representation to recording artists, music producers, and entertainment companies. Jacquie\u2019s work focuses on drafting and negotiating relevant agreements, including producer agreements, songwriter agreements and featured artist agreements.",
         "She is Co-Owner of Concrete Artist Management, LLC."
       ],
       "credentials": [
@@ -120,19 +136,28 @@ window.siteData = {
     "featuredClient": {
       "name": "Lecrae Moore",
       "type": "Recording Artist",
-      "copy": "Lecrae Moore is a recording artist represented among the firm’s approved representative client materials.",
+      "copy": "Lecrae Moore is a recording artist represented among the firm\u2019s approved representative client materials.",
       "links": [
-        { "label": "Lecrae | Reach Records", "url": "https://www.reachrecords.com/artists/lecrae/" },
-        { "label": "Instagram", "url": "https://www.instagram.com/lecrae/" }
+        {
+          "label": "Lecrae | Reach Records",
+          "url": "https://www.reachrecords.com/artists/lecrae/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/lecrae/"
+        }
       ]
     },
     "clients": [
       {
-        "name": "Think It’s A Game Records, Inc.",
+        "name": "Think It\u2019s A Game Records, Inc.",
         "type": "Record Label",
         "copy": "The Atlanta-based independent label responsible for YFN Lucci releases.",
         "links": [
-          { "label": "Instagram", "url": "https://www.instagram.com/thinkitsagame/" }
+          {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/thinkitsagame/"
+          }
         ]
       },
       {
@@ -140,7 +165,10 @@ window.siteData = {
         "type": "Music + Sound for Brands",
         "copy": "A music and sound company serving brand, advertising, and creative campaigns.",
         "links": [
-          { "label": "Website", "url": "https://www.barkingowl.com/" }
+          {
+            "label": "Website",
+            "url": "https://www.barkingowl.com/"
+          }
         ]
       },
       {
@@ -148,10 +176,28 @@ window.siteData = {
         "type": "Legacy / Estate",
         "copy": "The legacy estate connected to the official Wilson Pickett brand and music legacy.",
         "links": [
-          { "label": "Official Legacy Site", "url": "https://www.wilsonpickettlegacy.com/" }
+          {
+            "label": "Official Legacy Site",
+            "url": "https://www.wilsonpickettlegacy.com/"
+          }
         ]
       }
-    ]
+    ],
+    "secondaryFeaturedClient": {
+      "name": "Hero The Band",
+      "type": "Band / Recording Group",
+      "copy": "Hero The Band is an Atlanta-based group included among the firm's approved representative client materials.",
+      "links": [
+        {
+          "label": "Website",
+          "url": "https://www.herotheband.com/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/herotheband/"
+        }
+      ]
+    }
   },
   "recognition": {
     "items": [
@@ -160,7 +206,7 @@ window.siteData = {
       "ASCAP Women in Music Honoree",
       "Former Vice Chair, State Bar of Georgia Entertainment & Sports Law Section",
       "Nova Southeastern University Distinguished Alumni Award Recipient",
-      "Florida State University ‘Celebrates Women Entrepreneurs’ feature"
+      "Florida State University \u2018Celebrates Women Entrepreneurs\u2019 feature"
     ],
     "publications": [
       "Digital Transmission of Sound Recordings, New York Law Journal",
