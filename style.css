@@ -179,7 +179,7 @@ img { max-width: 100%; }
   position: relative;
   z-index: 1;
   height: min(76vh, 760px);
-  min-height: 540px;
+  min-height: 460px;
   overflow: hidden;
   border-radius: 40px;
   box-shadow: var(--shadow);
@@ -234,25 +234,42 @@ img { max-width: 100%; }
 .profile-stack { display: grid; gap: 46px; }
 .person-card {
   display: grid;
-  grid-template-columns: minmax(320px, .78fr) minmax(420px, 1fr);
+  grid-template-columns: minmax(320px, 360px) minmax(0, 1fr);
   gap: clamp(26px, 4vw, 60px);
   align-items: center;
 }
-.person-card:nth-child(even) .person-image-wrap { order: 2; }
+.person-card:nth-child(even) {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+}
 .person-image-wrap {
+  grid-column: 1;
   overflow: hidden;
   border-radius: 34px;
-  min-height: 540px;
+  width: min(100%, 360px);
+  aspect-ratio: 4 / 5;
+  min-height: 0;
   background: var(--cream);
   box-shadow: var(--shadow);
+  justify-self: start;
+}
+.person-copy {
+  grid-column: 2;
+  min-width: 0;
+}
+.person-card:nth-child(even) .person-copy {
+  grid-column: 1;
+}
+.person-card:nth-child(even) .person-image-wrap {
+  grid-column: 2;
+  justify-self: end;
 }
 .person-image {
   width: 100%;
   height: 100%;
-  min-height: 460px;
+  min-height: 0;
   display: block;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 18%;
 }
 .person-copy h3 {
   margin: 0 0 16px;
@@ -373,7 +390,7 @@ img { max-width: 100%; }
 }
 .client-copy span { color: var(--clay); font-weight: 900; letter-spacing: .14em; text-transform: uppercase; font-size: .72rem; }
 .client-copy p:last-child { margin-top: 20px; color: rgba(255,255,255,.74); max-width: 620px; }
-.client-list { display: grid; grid-template-columns: repeat(3, minmax(220px, 1fr)); gap: 12px; }
+.client-list { display: grid; grid-template-columns: repeat(5, minmax(170px, 1fr)); gap: 12px; }
 .client-chip { padding: 20px; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.035); border-radius: 24px; }
 .client-chip span { color: var(--clay); font-size: .65rem; font-weight: 900; text-transform: uppercase; letter-spacing: .15em; }
 .client-chip h3 { margin: 10px 0; color: #fff; font-size: 1.05rem; }
@@ -430,8 +447,7 @@ img { max-width: 100%; }
 @media (max-width: 1180px) {
   :root { --rail: 260px; }
   .hero-panel, .person-card, .featured-client, .recognition-layout { grid-template-columns: 1fr; }
-  .person-card:nth-child(even) .person-image-wrap { order: 0; }
-  .practice-areas, .client-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .practice-areas, .client-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .timeline-strip { grid-template-columns: repeat(5, 220px); }
 }
 
@@ -448,6 +464,7 @@ img { max-width: 100%; }
   .hero-panel { padding-top: 36px; }
   .hero-photo { min-height: 360px; height: 58vh; }
   .person-image-wrap, .person-image, .client-photo, .client-img { min-height: 340px; }
+  .person-image-wrap { width: 100%; max-width: none; aspect-ratio: 4 / 5; }
   .practice-areas, .client-list { grid-template-columns: 1fr; }
   .site-footer { display: grid; }
 }
@@ -581,36 +598,44 @@ img { max-width: 100%; }
   .practice-areas, .client-list { grid-template-columns: 1fr; }
 }
 
+/* v2.4.3 profile alignment fix
+   Keep attorney photo and bio on the same horizontal row for tablet/desktop widths,
+   including the 80vw main-screen layout beside the fixed rail. */
+@media (min-width: 761px) {
+  .person-card {
+    grid-template-columns: minmax(280px, 360px) minmax(0, 1fr) !important;
+    align-items: center !important;
+  }
 
-/* v2.4 revisions */
-.person-card {
-  align-items: stretch;
+  .person-card:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px) !important;
+  }
+
+  .person-card .person-image-wrap {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    align-self: center !important;
+  }
+
+  .person-card .person-copy {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    align-self: center !important;
+  }
+
+  .person-card:nth-child(even) .person-copy {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+  }
+
+  .person-card:nth-child(even) .person-image-wrap {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+  }
 }
 
-.person-image-wrap {
-  aspect-ratio: 4 / 5;
-}
-
-.person-image {
-  object-position: center center;
-}
-
-.person-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100%;
-}
-
-.person-copy h3,
-.person-copy p:not(.person-role) {
-  max-width: 46rem;
-}
-
-.client-showcase {
-  gap: 26px;
-}
-
+/* v2.5 revisions */
 .featured-client--secondary {
   margin-top: 6px;
 }
@@ -626,13 +651,8 @@ img { max-width: 100%; }
   font-size: .84rem;
 }
 
-@media (max-width: 1180px) {
-  .person-card,
-  .featured-client {
-    grid-template-columns: 1fr;
-  }
-
-  .person-card:nth-child(even) .person-image-wrap {
-    order: 0;
+@media (min-width: 761px) {
+  .featured-client--secondary .client-img {
+    object-position: center center;
   }
 }

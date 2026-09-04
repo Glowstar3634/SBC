@@ -172,7 +172,11 @@
     window.setTimeout(() => body.classList.add('brand-visible'), 220);
     window.setTimeout(() => body.classList.add('rail-transitioning', 'brand-stacked'), 1250);
     window.setTimeout(() => body.classList.add('rail-docked'), 2350);
+
+    // The sidebar finishes docking at ~2.35s. Main content begins its fade exactly 0.6s later.
     window.setTimeout(() => body.classList.add('content-ready'), 2950);
+
+    // Keep sidebar section headers hidden until the main screen has fully faded in.
     window.setTimeout(() => body.classList.add('headline-ready'), 3700);
   }
 

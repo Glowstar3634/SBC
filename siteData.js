@@ -14,8 +14,8 @@ window.siteData = {
       "alt": "Sandra Brown portrait."
     },
     "studio": {
-      "src": "assets/images/SBrown_hsRed.png",
-      "alt": "Sandra Brown professional portrait 2."
+      "src": "assets/images/sbc_sandra_red.png",
+      "alt": "Sandra Brown professional portrait in a red dress."
     },
     "sandra": {
       "src": "assets/images/sbc_original_portrait.png",
@@ -34,8 +34,8 @@ window.siteData = {
       "alt": "Sandra Brown portrait in a black leather jacket."
     },
     "heroBand": {
-      "src": "assets/images/sbc_hero.jpg",
-      "alt": "Hero The Band with Sandra Brown at an outdoor event."
+      "src": "assets/images/sbc_htb.jpg",
+      "alt": "Sandra Brown with Hero The Band."
     }
   },
   "navigation": [
@@ -60,14 +60,14 @@ window.siteData = {
     "home": "Strategic counsel in the entertainment industry.",
     "profile": "Trusted at the intersection of talent, rights, and business.",
     "practice": "Featured representative clients.",
-    "recognition": "Selected recognition."
+    "recognition": "Recognition."
   },
   "hero": {
     "eyebrow": "Entertainment counsel for talent, rights, and creative enterprise",
     "intro": "Sandra Brown focuses on counseling award-winning recording artists, music producers, songwriters, independent filmmakers, music managers, music executives, and entertainment companies.",
     "highlights": [
       {
-        "value": "Types of Deals",
+        "value": "Dealmaking",
         "label": "Recording, production, publishing, and marketing/brand work"
       },
       {
@@ -75,14 +75,14 @@ window.siteData = {
         "label": "Bar admissions"
       },
       {
-        "value": "Dealmaking",
+        "value": "Music/Media/IP",
         "label": "Strategic counsel across rights, negotiations, and creative business"
       }
     ]
   },
   "profile": {
     "sandra": {
-      "name": "Sandra Brown",
+      "name": "Sandra Brown, Esq.",
       "role": "Founder / Entertainment Counsel",
       "linkedin": "https://www.linkedin.com/in/sandra-brown-dublas/",
       "body": [
@@ -186,7 +186,7 @@ window.siteData = {
     "secondaryFeaturedClient": {
       "name": "Hero The Band",
       "type": "Band / Recording Group",
-      "copy": "Hero The Band is an Atlanta-based group included among the firm's approved representative client materials.",
+      "copy": "Hero The Band is included among the firm\u2019s approved representative client materials.",
       "links": [
         {
           "label": "Website",
@@ -194,7 +194,7 @@ window.siteData = {
         },
         {
           "label": "Instagram",
-          "url": "https://www.instagram.com/herotheband/"
+          "url": "https://www.instagram.com/herotheband/?hl=en"
         }
       ]
     }
