@@ -14,8 +14,8 @@ window.siteData = {
       "alt": "Sandra Brown portrait."
     },
     "studio": {
-      "src": "assets/images/sbc_std_zoom.jpg",
-      "alt": "Sandra Brown in a creative studio environment."
+      "src": "assets/images/SBrown_hsRed.png",
+      "alt": "Sandra Brown professional portrait 2."
     },
     "sandra": {
       "src": "assets/images/sbc_original_portrait.png",
