@@ -241,9 +241,10 @@
   function init() {
     renderRailNav();
     renderHero();
+    renderRecognition();
     renderProfile();
     //renderPractice();
-    renderRecognition();
+    
     renderFooter();
     initIntro();
     initDynamicRailHeader();

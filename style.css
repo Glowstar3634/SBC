@@ -412,7 +412,7 @@ img { max-width: 100%; }
   padding: clamp(15px, 2vw, 24px) 0;
   border-bottom: 1px solid var(--soft-line);
   font-family: "Libre Baskerville", Georgia, serif;
-  font-size: clamp(1.45rem, 2.7vw, 3.4rem);
+  font-size: clamp(1.15rem, 2.3vw, 3.0rem);
   line-height: 1.03;
   letter-spacing: -.055em;
 }
