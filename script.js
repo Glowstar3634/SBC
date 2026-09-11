@@ -242,7 +242,7 @@
     renderRailNav();
     renderHero();
     renderProfile();
-    renderPractice();
+    //renderPractice();
     renderRecognition();
     renderFooter();
     initIntro();
