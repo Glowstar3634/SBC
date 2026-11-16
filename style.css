@@ -656,3 +656,139 @@ img { max-width: 100%; }
     object-position: center center;
   }
 }
+
+/* v3 client revision pass */
+.person-copy h3 {
+  font-size: clamp(1.9rem, 3vw, 3.55rem);
+  line-height: 1;
+}
+
+.person-copy p:not(.person-role) {
+  max-width: none;
+}
+
+.practice-intro {
+  margin-bottom: 42px;
+}
+
+.practice-intro .section-kicker-gold {
+  margin-bottom: 16px;
+}
+
+.clients-intro-copy {
+  max-width: 920px !important;
+  margin: 0 !important;
+  color: rgba(255,255,255,.8) !important;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.25rem, 2vw, 2rem) !important;
+  line-height: 1.34;
+  letter-spacing: -.025em;
+}
+
+.client-group {
+  display: grid;
+  gap: 24px;
+}
+
+.client-group + .client-group {
+  margin-top: 34px;
+  padding-top: 42px;
+  border-top: 1px solid rgba(255,255,255,.14);
+}
+
+.client-group-title {
+  margin: 0;
+  color: rgba(255,255,255,.9);
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: clamp(1.45rem, 2.35vw, 2.65rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  max-width: 880px;
+}
+
+.client-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.client-chip {
+  min-width: 0;
+}
+
+.client-chip h3 {
+  overflow-wrap: anywhere;
+}
+
+.featured-client--secondary {
+  margin-top: 0;
+}
+
+.recognition-list span {
+  font-size: clamp(1.05rem, 1.8vw, 2.35rem);
+  line-height: 1.08;
+}
+
+/* Correct the mobile profile grid instead of allowing desktop grid-column
+   assignments to create implicit columns on narrow screens. */
+@media (max-width: 760px) {
+  .person-card,
+  .person-card:nth-child(even) {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px !important;
+    align-items: start !important;
+  }
+
+  .person-card .person-image-wrap,
+  .person-card:nth-child(even) .person-image-wrap {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    width: 100% !important;
+    max-width: 520px;
+    aspect-ratio: 4 / 5;
+    min-height: 0 !important;
+    justify-self: center !important;
+    align-self: start !important;
+  }
+
+  .person-card .person-copy,
+  .person-card:nth-child(even) .person-copy {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    width: 100%;
+    min-width: 0;
+    align-self: start !important;
+  }
+
+  .person-image {
+    width: 100%;
+    height: 100%;
+    min-height: 0 !important;
+    object-fit: cover;
+    object-position: center 18%;
+  }
+
+  .person-copy h3 {
+    font-size: clamp(1.9rem, 9vw, 2.7rem);
+  }
+
+  .credential-cloud {
+    gap: 8px;
+  }
+
+  .client-list {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-client {
+    grid-template-columns: 1fr;
+  }
+
+  .client-photo,
+  .client-img {
+    min-height: 300px;
+  }
+
+  .client-group + .client-group {
+    margin-top: 18px;
+    padding-top: 32px;
+  }
+}

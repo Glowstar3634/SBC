@@ -93,37 +93,36 @@
     `;
   }
 
-  function renderPractice() {
-    const secondaryFeatured = data.practice.secondaryFeaturedClient
-      ? featuredClientMarkup(data.practice.secondaryFeaturedClient, data.images.heroBand, 'featured-client--secondary')
-      : '';
+  function clientChipMarkup(client) {
+    return `
+      <article class="client-chip">
+        <span>${escapeHtml(client.type)}</span>
+        <h3>${escapeHtml(client.name)}</h3>
+        <p>${escapeHtml(client.copy)}</p>
+        ${clientLinks(client.links)}
+      </article>
+    `;
+  }
 
+  function renderPractice() {
     $('#practice').innerHTML = `
       <div class="practice-intro reveal">
-        <p>${escapeHtml(data.practice.intro)}</p>
-      </div>
-      <div class="practice-areas reveal" data-delay="1">
-        ${data.practice.areas.map((item, index) => `
-          <article class="practice-area">
-            <span>${String(index + 1).padStart(2, '0')}</span>
-            <h3>${escapeHtml(item.title)}</h3>
-            <p>${escapeHtml(item.copy)}</p>
-          </article>
-        `).join('')}
+        <p class="section-kicker section-kicker-gold">${escapeHtml(data.practice.heading)}</p>
+        <p class="clients-intro-copy">${escapeHtml(data.practice.intro)}</p>
       </div>
       <div class="client-showcase reveal" data-delay="1">
-        ${featuredClientMarkup(data.practice.featuredClient, data.images.lecrae)}
-        <div class="client-list" aria-label="Representative clients">
-          ${data.practice.clients.map((client) => `
-            <article class="client-chip">
-              <span>${escapeHtml(client.type)}</span>
-              <h3>${escapeHtml(client.name)}</h3>
-              <p>${escapeHtml(client.copy)}</p>
-              ${clientLinks(client.links)}
-            </article>
-          `).join('')}
-        </div>
-        ${secondaryFeatured}
+        ${data.practice.groups.map((group) => `
+          <section class="client-group">
+            <h2 class="client-group-title">${escapeHtml(group.title)}</h2>
+            ${(group.featured || []).map((client) => featuredClientMarkup(client, data.images[client.imageKey] || data.images.lecrae)).join('')}
+            ${(group.clients || []).length ? `
+              <div class="client-list" aria-label="${escapeHtml(group.title)}">
+                ${group.clients.map(clientChipMarkup).join('')}
+              </div>
+            ` : ''}
+            ${(group.featuredAfter || []).map((client) => featuredClientMarkup(client, data.images[client.imageKey] || data.images.heroBand, 'featured-client--secondary')).join('')}
+          </section>
+        `).join('')}
         <p class="client-note">${escapeHtml(data.practice.clientsNote)}</p>
       </div>
     `;
@@ -241,10 +240,9 @@
   function init() {
     renderRailNav();
     renderHero();
-    renderRecognition();
     renderProfile();
-    //renderPractice();
-    
+    renderPractice();
+    renderRecognition();
     renderFooter();
     initIntro();
     initDynamicRailHeader();

@@ -48,7 +48,7 @@ window.siteData = {
       "href": "#profile"
     },
     {
-      "label": "Clients",
+      "label": "Clients & Press",
       "href": "#practice"
     },
     {
@@ -57,18 +57,18 @@ window.siteData = {
     }
   ],
   "railHeaders": {
-    "home": "Strategic counsel in the entertainment industry.",
+    "home": "Extensive experience in the entertainment industry.",
     "profile": "Trusted at the intersection of talent, rights, and business.",
-    "practice": "Featured representative clients.",
+    "practice": "Clients & Press",
     "recognition": "Recognition."
   },
   "hero": {
-    "eyebrow": "Entertainment counsel for talent, rights, and creative enterprise",
-    "intro": "Sandra Brown focuses on counseling award-winning recording artists, music producers, songwriters, independent filmmakers, music managers, music executives, and entertainment companies.",
+    "eyebrow": "Representing today's music industry and the legacies that helped shape it",
+    "intro": "Sandra Brown works closely with contemporary artists, music producers, songwriters, independent filmmakers, music managers, music executives, and entertainment companies, as well as legacy artists, their families, and estates.",
     "highlights": [
       {
         "value": "Dealmaking",
-        "label": "Recording, production, publishing, and marketing/brand work"
+        "label": "Negotiating recording, publishing, touring, branding, and licensing agreements"
       },
       {
         "value": "GA + NY",
@@ -76,7 +76,7 @@ window.siteData = {
       },
       {
         "value": "Music/Media/IP",
-        "label": "Strategic counsel across rights, negotiations, and creative business"
+        "label": "Strategic counsel across rights that support their creative and business goals."
       }
     ]
   },
@@ -86,8 +86,9 @@ window.siteData = {
       "role": "Founder / Entertainment Counsel",
       "linkedin": "https://www.linkedin.com/in/sandra-brown-dublas/",
       "body": [
-        "Sandra Brown structures and negotiates agreements in the areas of music, music publishing, live performances, branding/endorsements, independent film, licensing and other related intellectual-property protection.",
-        "Before establishing Sandra Brown Consulting, her career included over a decade of experience at both AMLAW 100 and AMLAW 200 law firms."
+        "Sandra Brown is an accomplished entertainment attorney with extensive experience representing recording artists, music producers, executives, and legacy artist estates. Recognized by Billboard among its Top Music Lawyers, Sandra brings decades of industry knowledge, business insight, and strategic counsel to clients navigating the evolving music industry.",
+        "A signature focus of this firm is legacy preservation and long-term value enhancement. Sandra Brown works with established and legacy artists, their families, and estates to protect music catalogs, copyrights, and name, image, and likeness rights while exploring opportunities to sustain and enhance the commercial value of their work. Through strategic licensing, catalog transactions, brand partnerships, and thoughtful rights management, she helps clients position these valuable assets for continued relevance and growth.",
+        "Sandra earned her law degree from Florida State University College of Law and bachelor’s degree from Nova Southeastern University. She is a Lifetime Member of the Black Entertainment and Sports Law Association (BESLA) and a member of Delta Sigma Theta Sorority, Incorporated. Before establishing Sandra Brown Consulting, her career included more than a decade of experience at both AMLAW 100 and AMLAW 200 law firms."
       ],
       "credentials": [
         "Entertainment, media, and technology counsel",
@@ -102,8 +103,9 @@ window.siteData = {
       "role": "Attorney",
       "linkedin": "https://www.linkedin.com/in/jacquie-fernandez-954962356/",
       "body": [
-        "Jacquie Fernandez provides legal representation to recording artists, music producers, and entertainment companies. Jacquie\u2019s work focuses on drafting and negotiating relevant agreements, including producer agreements, songwriter agreements and featured artist agreements.",
-        "She is Co-Owner of Concrete Artist Management, LLC."
+        "Jacquie Fernandez provides legal representation to recording artists, music producers, and entertainment companies. Jacquie’s work focuses on drafting and negotiating relevant agreements, including producer agreements, songwriter agreements and featured artist agreements.",
+        "She is Co-Owner of Concrete Artist Management, LLC.",
+        "Jacquie earned her law degree from Fordham University School of Law, and her bachelor’s degree from University of Pennsylvania, B.A."
       ],
       "credentials": [
         "Recording artist, music producer, and entertainment company representation",
@@ -113,91 +115,107 @@ window.siteData = {
     }
   },
   "practice": {
-    "intro": "Types of deals include recording, production, publishing, and marketing/brand work.",
-    "areas": [
-      {
-        "title": "Recording + Production",
-        "copy": "Recording, producer, featured artist, label, and production-related agreements."
-      },
-      {
-        "title": "Publishing",
-        "copy": "Songwriter, publishing, catalog, administration, licensing, and related rights matters."
-      },
-      {
-        "title": "Marketing + Brand Work",
-        "copy": "Branding, endorsements, sponsorships, merchandising, and name-and-likeness work."
-      },
-      {
-        "title": "Film + Live Performance",
-        "copy": "Independent film, live performance, and talent-related agreements."
-      }
-    ],
+    "intro": "Whether working closely with the next generation of artists releasing new music or helping to preserve the contributions of some of the music industry’s most influential performers by protecting creative rights and maximizing business opportunities, we are committed to helping clients build lasting value across generations.",
     "clientsNote": "Representative clients are included with permission.",
-    "featuredClient": {
-      "name": "Lecrae Moore",
-      "type": "Recording Artist",
-      "copy": "Lecrae Moore is a recording artist represented among the firm\u2019s approved representative client materials.",
-      "links": [
-        {
-          "label": "Lecrae | Reach Records",
-          "url": "https://www.reachrecords.com/artists/lecrae/"
-        },
-        {
-          "label": "Instagram",
-          "url": "https://www.instagram.com/lecrae/"
-        }
-      ]
-    },
-    "clients": [
+    "heading": "Clients & Press",
+    "groups": [
       {
-        "name": "Think It\u2019s A Game Records, Inc.",
-        "type": "Record Label",
-        "copy": "The Atlanta-based independent label responsible for YFN Lucci releases.",
-        "links": [
+        "title": "Contemporary and emerging artists & entertainment companies",
+        "featured": [
           {
-            "label": "Instagram",
-            "url": "https://www.instagram.com/thinkitsagame/"
+            "name": "Lecrae Moore",
+            "type": "Recording Artist",
+            "copy": "Lecrae Moore is a recording artist represented among the firm’s approved representative client materials.",
+            "imageKey": "lecrae",
+            "links": [
+              {
+                "label": "Video",
+                "url": "https://www.youtube.com/watch?v=jbMxucbIVP4"
+              }
+            ]
+          }
+        ],
+        "clients": [
+          {
+            "name": "Think It’s A Game Records, Inc.",
+            "type": "Record Label",
+            "copy": "The Atlanta-based independent label responsible for YFN Lucci releases.",
+            "links": [
+              {
+                "label": "Press",
+                "url": "https://www.tmz.com/2025/05/28/yfn-lucci-fly-think-its-a-game-entertainment-buys-out-warner-contract/"
+              }
+            ]
+          },
+          {
+            "name": "Barking Owl",
+            "type": "Music + Sound for Brands",
+            "copy": "A music and sound company serving brand, advertising, and creative campaigns.",
+            "links": [
+              {
+                "label": "Website",
+                "url": "https://www.barkingowl.com/"
+              }
+            ]
+          },
+          {
+            "name": "Booker T. Mattison",
+            "type": "Author / Filmmaker",
+            "copy": "Author and independent filmmaker included among the firm’s representative client materials.",
+            "links": [
+              {
+                "label": "Press",
+                "url": "https://grady.uga.edu/news/booker-t-mattison-releases-new-film-fourth-in-four-years/"
+              }
+            ]
+          }
+        ],
+        "featuredAfter": [
+          {
+            "name": "Hero The Band",
+            "type": "Band / Recording Group",
+            "copy": "Hero The Band is included among the firm’s approved representative client materials.",
+            "imageKey": "heroBand",
+            "links": [
+              {
+                "label": "Video",
+                "url": "https://www.bing.com/videos/riverview/relatedvideo?q=HERO+THE+BAND&mid=BEE450B9B8ED26D60333BEE450B9B8ED26D60333&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUC1pOTJteEef10zJM0cHs4iQ&FORM=VIRE"
+              }
+            ]
           }
         ]
       },
       {
-        "name": "Barking Owl",
-        "type": "Music + Sound for Brands",
-        "copy": "A music and sound company serving brand, advertising, and creative campaigns.",
-        "links": [
+        "title": "Legacy artists & estates",
+        "featured": [],
+        "clients": [
           {
-            "label": "Website",
-            "url": "https://www.barkingowl.com/"
-          }
-        ]
-      },
-      {
-        "name": "The Wilson Pickett Jr. Estate",
-        "type": "Legacy / Estate",
-        "copy": "The legacy estate connected to the official Wilson Pickett brand and music legacy.",
-        "links": [
+            "name": "Wilson Pickett",
+            "type": "Legacy Artist / Estate",
+            "copy": "Legacy representation connected to the Wilson Pickett music catalog, rights, and estate.",
+            "links": [
+              {
+                "label": "Press",
+                "url": "https://www.musicbusinessworldwide.com/wilson-pickett-estate-strikes-deal-with-primary-wave-covering-publishing-catalog-and-name-image-likeness-rights/"
+              }
+            ]
+          },
           {
-            "label": "Official Legacy Site",
-            "url": "https://www.wilsonpickettlegacy.com/"
+            "name": "Roy Ayers",
+            "type": "Legacy Artist",
+            "copy": "Legacy artist included among the firm’s representative client materials.",
+            "links": []
+          },
+          {
+            "name": "Betty Wright",
+            "type": "Legacy Artist / Estate",
+            "copy": "Legacy artist estate included among the firm’s representative client materials.",
+            "links": []
           }
-        ]
+        ],
+        "featuredAfter": []
       }
-    ],
-    "secondaryFeaturedClient": {
-      "name": "Hero The Band",
-      "type": "Band / Recording Group",
-      "copy": "Hero The Band is included among the firm\u2019s approved representative client materials.",
-      "links": [
-        {
-          "label": "Website",
-          "url": "https://www.herotheband.com/"
-        },
-        {
-          "label": "Instagram",
-          "url": "https://www.instagram.com/herotheband/?hl=en"
-        }
-      ]
-    }
+    ]
   },
   "recognition": {
     "items": [
@@ -206,7 +224,7 @@ window.siteData = {
       "ASCAP Women in Music Honoree",
       "Former Vice Chair, State Bar of Georgia Entertainment & Sports Law Section",
       "Nova Southeastern University Distinguished Alumni Award Recipient",
-      "Florida State University \u2018Celebrates Women Entrepreneurs\u2019 feature"
+      "Florida State University ‘Celebrates Women Entrepreneurs’ feature"
     ],
     "publications": [
       "Digital Transmission of Sound Recordings, New York Law Journal",
